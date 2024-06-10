@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git url: 'https://github.com/SaiDevOpsFaculty/testjava.git', branch: 'master'
+                git url: 'https://github.com/SaiDevOpsFaculty/simple-java-maven-app.git', branch: 'master'
             }
         }
         stage('build') {
