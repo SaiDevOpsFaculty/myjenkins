@@ -9,7 +9,7 @@ pipeline {
                 git url: 'https://github.com/SaiDevOpsFaculty/war-web-project.git', branch: 'master'
             }
         }
-        stage('build') {
+        stage('maven build') {
             steps {
                 sh 'mvn clean install'
             }
